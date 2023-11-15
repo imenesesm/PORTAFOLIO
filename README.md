@@ -4,9 +4,9 @@
 
 **¿Para quiénes es esta propuesta?** → 
 
-Usuario Extremo bajo: 
+Usuario Extremo 1: 
 
-Usuario Extremo alto:
+Usuario Extremo 2:
 
 Usuario promedio:
 
