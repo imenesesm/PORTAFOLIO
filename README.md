@@ -1,9 +1,14 @@
 # PORTAFOLIO
 
-**¿Para qué es esta propuesta?** → Enseñar mis trabajos realizados a otras personas.
+**¿Para qué es esta propuesta?** → Enseñar mis trabajos realizados a otras personas para poder darme a conocer como diseñadora y mostrar mis conocimientos a través de un formato más interesante que un PDF.
 
 **¿Para quiénes es esta propuesta?** → 
 
+Usuario Extremo bajo: 
+
+Usuario Extremo alto:
+
+Usuario promedio:
 
 **¿Qué existe que es similar a la propuesta?** → 
 
