@@ -116,7 +116,7 @@
                 var tarjeta = document.querySelector("#trabajos");
                 data.forEach(function (t, i) {
                     tarjeta.innerHTML +=
-                        `<article class="col"><div class="card h-100 shadow-sm ${t.soporte}"><img src="${t.fotos[0]}" alt="${t.nombre}" class="card-img-top"><div class="card-body"><div class="fs-5"><a href="#" class="link-primary"data-bs-toggle="modal" data-bs-target="#portfolioModal${i + 1}">${t.nombre}</a></div><div class= "text-secondary"><p>${t.abstract}</div></article`;
+                        `<article class="col"><div class="card h-100 shadow-sm ${t.soporte}"><img loading="lazy" src="${t.fotos[0]}" alt="${t.nombre}" class="card-img-top"><div class="card-body"><div class="fs-5"><a href="#" class="link-primary"data-bs-toggle="modal" data-bs-target="#portfolioModal${i + 1}">${t.nombre}</a></div><div class= "text-secondary"><p>${t.abstract}</div></article`;
                   	var modal = document.createElement("div");
 	                modal.classList.add("portfolio-modal", "modal", "fade");
 	                modal.id =`portfolioModal${i + 1}`;
@@ -132,7 +132,7 @@
 	                                    <div class="modal-body">
 	                                        <h2 class="text-uppercase text-primary">${t.nombre}</h2>
 	                                        <p class="item-intro text-secondary">${t.abstract}</p>
-	                                        ${t.fotos.map(foto => `<img class="img-fluid d-block mx-auto" src="${foto}" alt="">`).join('')}
+	                                        ${t.fotos.map(foto => `<img loading="lazy" class="img-fluid d-block mx-auto" src="${foto}" alt="">`).join('')}
 	                                        <p class= "text-primary py-4">${t.texto}</p>
 	                                        <button class="btn btn-primary btn-sm text-uppercase text-center" data-bs-dismiss="modal" type="button">
 	                                            <i class="fas fa-times me-1"></i>
