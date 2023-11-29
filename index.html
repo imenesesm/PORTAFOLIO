@@ -38,7 +38,7 @@
 			}
 
 			h1, h2, h3, h4, h5, h6 {
-			    font-family: 'Hedvig Letters Serif', serif;
+			    font-family: 'Hedvig Letters Serif', sans-serif;
 			}
 	        .text-primary,
 	        .link-primary,
@@ -50,7 +50,7 @@
 	        .text-secondary {
 	        	color: #58595b !important;
 	        }
-    	</style>	 
+	    </style>	 
 
 	</head>
 
@@ -170,7 +170,7 @@
 	                                    <div class="modal-body">
 	                                        <h2 class="text-uppercase text-primary">${t.nombre}</h2>
 	                                        <p class="item-intro text-secondary">${t.abstract}</p>
-	                                        ${t.fotos.map(foto => `<img class="img-fluid d-block mx-auto" src="${foto}" alt="${descripcion}">`).join('')}
+	                                        ${t.fotos.map(foto => `<img class="img-fluid d-block mx-auto" src="${foto}" alt="">`).join('')}
 	                                        <p class= "text-primary">${t.texto}</p>
 	                                        <button class="btn btn-primary btn-xl text-uppercase text-center" data-bs-dismiss="modal" type="button">
 	                                            <i class="fas fa-times me-1"></i>
