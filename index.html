@@ -33,24 +33,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=Vina+Sans&display=swap" rel="stylesheet">
 
      	<style>
-     	body {
-    	font-family: 'Hedvig Letters Sans', sans-serif;
-		}
+	     	body {
+	    	font-family: 'Hedvig Letters Sans', sans-serif;
+			}
 
-		h1, h2, h3, h4, h5, h6 {
-		    font-family: 'Hedvig Letters Serif', sans-serif;
-		}
-        .text-primary,
-        .link-primary,
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: #0c44c7 !important;
-        }
+			h1, h2, h3, h4, h5, h6 {
+			    font-family: 'Hedvig Letters Serif', serif;
+			}
+	        .text-primary,
+	        .link-primary,
+	        .navbar-brand,
+	        .navbar-nav .nav-link {
+	            color: #0c44c7 !important;
+	        }
 
-        .text-secondary {
-        	color: #58595b !important;
-        }
-    </style>	 
+	        .text-secondary {
+	        	color: #58595b !important;
+	        }
+    	</style>	 
 
 	</head>
 
@@ -154,7 +154,7 @@
                 var tarjeta = document.querySelector("#trabajos");
                 data.forEach(function (t, i) {
                     tarjeta.innerHTML +=
-                        `<article class="col"><div class="card h-100 shadow-sm ${t.soporte}"><img src="${t.fotos[0]}" class="card-img-top"><div class="card-body"><div class="fs-5"><div class="invisible"${t.descripcion}></div><a href="#" class="link-primary"data-bs-toggle="modal" data-bs-target="#portfolioModal${i + 1}">${t.nombre}</a></div><div class= "text-secondary"><p>${t.abstract}</div></article`;
+                        `<article class="col"><div class="card h-100 shadow-sm ${t.soporte}"><img src="${t.fotos[0]}" class="card-img-top"><div class="card-body"><div class="fs-5"><a href="#" class="link-primary"data-bs-toggle="modal" data-bs-target="#portfolioModal${i + 1}">${t.nombre}</a></div><div class= "text-secondary"><p>${t.abstract}</div></article`;
                   	var modal = document.createElement("div");
 	                modal.classList.add("portfolio-modal", "modal", "fade");
 	                modal.id =`portfolioModal${i + 1}`;
@@ -170,7 +170,7 @@
 	                                    <div class="modal-body">
 	                                        <h2 class="text-uppercase text-primary">${t.nombre}</h2>
 	                                        <p class="item-intro text-secondary">${t.abstract}</p>
-	                                        ${t.fotos.map(foto => `<img class="img-fluid d-block mx-auto" src="${foto}" alt="...">`).join('')}
+	                                        ${t.fotos.map(foto => `<img class="img-fluid d-block mx-auto" src="${foto}" alt="${descripcion}">`).join('')}
 	                                        <p class= "text-primary">${t.texto}</p>
 	                                        <button class="btn btn-primary btn-xl text-uppercase text-center" data-bs-dismiss="modal" type="button">
 	                                            <i class="fas fa-times me-1"></i>
